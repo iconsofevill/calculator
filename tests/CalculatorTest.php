@@ -72,6 +72,18 @@ class CalculatorTest extends TestCase
             $this->calc->less(2, 3),
             'wrong less'
         );
+
+        $this->assertEquals(
+            [2,3],
+            $this->calc->sort([2,3]),
+            'wrong sort'
+        );
+
+        $this->assertEquals(
+            [3,2],
+            $this->calc->reverse([2,3]),
+            'wrong reverse'
+        );
     }
 
     protected function tearDown(): void

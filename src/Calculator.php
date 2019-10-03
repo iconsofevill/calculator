@@ -58,4 +58,14 @@ class Calculator
     {
         return ($a < $b) ? true : false;
     }
+
+    public function sort (array $array) : array {
+        sort ($array);
+        return $array;
+    }
+
+    public function reverse (array $array) : array {
+        $rev = array_reverse($array);
+        return $rev;
+    }
 }
